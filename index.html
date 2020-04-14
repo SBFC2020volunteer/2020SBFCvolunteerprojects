@@ -100,8 +100,8 @@
       var map = new mapboxgl.Map({
         container: 'map', // container id
         style: "mapbox://styles/mapbox/outdoors-v11", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
-        center: [-114.411464, 46.7852299], // starting position [lng, lat]
-        zoom: 15, // starting zoom
+        center: [-114.411464, 45.7852299], // starting position [lng, lat]
+        zoom: 9, // starting zoom
         transformRequest: transformRequest
       });
 
@@ -131,7 +131,7 @@
 
           // create a variable for your popup and populate your popup with information from your table
           var popup = new mapboxgl.Popup()
-            .setHTML(`<h3>` + row.Project + `</h3>` + '<h4>' + '<b>' + 'Website: ' + '</b>' + row.Website + '</h4>' + '<h4>' + '<b>' + 'Phone: ' + '</b>' + row.Phone + '</h4>'); // use the table to populate your popup with text
+            .setHTML(`<h3>` + row.Project + `</h3>` + '<h4>' + '<b>' + 'Website: ' + '</b>' + row.Website + '</h4>'); // use the table to populate your popup with text
 
 
           // create a variable for your markup and add it to the map 
